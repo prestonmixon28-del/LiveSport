@@ -3,9 +3,14 @@ public class NewMain {
 
         GameTicker ticker = new GameTicker();
 
-        ticker.addUpdate("team scored a goal");
-        ticker.addUpdate("game is tied");
+       MobilePushNotification phone = new MobilePushNotification();
+       StadiumDisplay stadium = new StadiumDisplay();
+       SocialMediaBot socialMedia = new SocialMediaBot();
 
-        System.out.println(ticker.getLatestUpdate());
+       ticker.register(phone);
+       ticker.register(stadium);
+       ticker.register(socialMedia);
+
+       ticker.addUpdate("team scored a goal");
     }
 }
