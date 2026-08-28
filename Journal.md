@@ -5,3 +5,5 @@ Phase-2:
 The interface create a common set of rules. The subject can notify any Observer without needing to know which specific class it is. It would make the program easier to change and add new observers.
 Phase-3:
 The GameTicker only needs to know that each object is an Observer. It can notify all of them, without knowing what type they are. This makes the program easier to read.
+Phase-4:
+Im using the pull method because the observers can get the latest data from the GameTicker when they are updated. It gives it more flexibility in choosing what data they need.
